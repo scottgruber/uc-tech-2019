@@ -40,15 +40,6 @@ footer: [speaking.scottgruber.me](https://speaking.scottgruber.me) @ UC Tech San
 
 ---
 
-# [fit] What's next?
-
----
-[.header: Helvetica Now Display XBlack Italic]
-
-# [fit] *I don't know*.
-
----
-
 # [fit] What is the nature of the web?
 ^ what are the foundations. what doesn't change?
 
@@ -75,6 +66,10 @@ footer: [speaking.scottgruber.me](https://speaking.scottgruber.me) @ UC Tech San
 
 ^ work for everyone, loads fast, looks good.
 
+--- 
+
+# [fit] Design Systems  
+
 ---
 
 # [fit] HTML & CSS
@@ -90,7 +85,7 @@ Microformats and semantic markup
 
 ```html
 
-<nav class="topic-nav">
+<nav class="ucla-c-topic-nav">
 <ul>
 	<li><a href="#climate-change">Climate Change</a></li>
 	<li><a href="#energy">Energy</a></li>
@@ -106,14 +101,14 @@ Microformats and semantic markup
 
 ```css
 
-.topic-nav ul {
+.ucla-c-topic-nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
 @media screen and (min-width: 30em) {
-  .topic-nav ul {
+  .ucla-c-topic-nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,7 +129,7 @@ Microformats and semantic markup
 
 <h2><a id="climate-change"></a>Climate Change</h2>
 
-<div class="faculty-advisors-list">
+<div class="ucla-c-faculty-advisors">
 
 <ul>	
   <li><a href="#">Alan Barreca</a></li>	
@@ -154,14 +149,14 @@ Microformats and semantic markup
 ```css
 
 @media screen and (min-width: 30em) {
-  .faculty-advisors-list > ul {
+  .ucla-c-faculty-advisors > ul {
     column-count: 3;
     column-gap: 1em;
   }
 }
 
 @media screen and (min-width: 60em) {
-  .faculty-advisors-list > ul {
+  .ucla-c-faculty-advisors > ul {
     column-count: 5;
     column-gap: 1em;
   }
@@ -182,7 +177,7 @@ Microformats and semantic markup
 
 ```html
 
-<div class="ucla-l-people-grid">
+<div class="ucla-c-people-grid">
 
 <article class="h-card">
   <a class="u-url" href="#">
@@ -202,7 +197,7 @@ Microformats and semantic markup
 
 ```html
 
-<div class="ucla-l-people-grid">
+<div class="ucla-c-people-grid">
 
 <article class="h-card">
   <a class="u-url" href="#">
@@ -250,7 +245,7 @@ Microformats and semantic markup
 
 ```css
 
-.ucla-l-people-grid {
+.ucla-c-people-grid {
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -264,14 +259,14 @@ Microformats and semantic markup
 ```css
 
 /* fall back if no grid support */
-.ucla-l-people-grid > article {
+.ucla-c-people-grid > article {
     display: inline-block;
     margin: 1em;
     vertical-align: top;
     width: 300px;
 }
 
-.ucla-l-people-grid > img {
+.ucla-c-people-grid > img {
     height: auto;
     width: 200px;
 }
@@ -283,7 +278,7 @@ Microformats and semantic markup
 
 @supports (display: grid) {
 
-    .ucla-l-people-grid {
+    .ucla-c-people-grid {
         display: grid;
         grid-gap: 2vw;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -291,17 +286,20 @@ Microformats and semantic markup
     }
 
     /* reset properties */
-    .ucla-l-people-grid > article {
+    .ucla-c-people-grid > article {
         margin: initial;
         width: initial;
     }
 }
 
 ```
+---
 
+# [fit] What's next?
 --- 
 
-#[fit] Thank you.
-
 ![80%, inline](img/uc-tech-logo-2019@2x.png)
+
+#[fit] Art Direction for the Web.
+Thank you. 
 
